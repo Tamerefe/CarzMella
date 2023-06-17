@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFkQl0k30eg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html { 
+  font-size: 16px; 
+}
+
+nav{
+  font-family: 'Muli';
+  padding-left: 2.5rem;
+  z-index: 2;
+  font-size: 1rem;  
+}
+
+nav a{
+  color:#ffffff;
+}
+
+nav a:hover{
+  color:#ffc400;
+}
+
+.dropdown-item:hover{
+  color:#ffc400;
+}
+
+li{
+  padding:1rem;
+}
+
+.dropdown-item{
+  border-bottom: 1px solid #e9eaee;
+}
+
+.dropdown-menu{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.dropdown-menu::after {
+  border-bottom: 8px solid #FFFFFF;
+  border-left: 9px solid rgba(0, 0, 0, 0);
+  border-right: 9px solid rgba(0, 0, 0, 0);
+  content: "";  
+  left: 1.3rem;
+  position: absolute;
+  top: -8px;
+}
+
+.navimg{
+  background-image: url(Image/BackgroundCars.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50rem;
+  text-align: center;
+  filter: brightness( 80% ) contrast( 100% ) saturate( 166% );
+}
+
+.fixed-top {
+    position: fixed;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.vehica-menu-hover {
+    height: 1px;
+    background-color: #ffc400;
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+    z-index: 10;
+    transition: all ease .5s;
+}
+
+.middle {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-header {
+  font-family: 'Modak', cursive;
+  font-size: 5rem;
+  color:  #fec200;
+}
+
+.menubutton {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0.55rem #999;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-paragraf-header{
+  position: absolute;
+  top: 41%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1rem;
+}
