@@ -54,7 +54,7 @@ li{
 }
 
 .navimg{
-  background-image: url(Image/BackgroundCars.jpg);
+  background-image: url(Img/BackgroundCars.jpg);
   background-position: center;
   background-size: cover;
   height: 50rem;
@@ -117,4 +117,271 @@ li{
   transform: translate(-50%, -50%);
   color: white;
   font-size: 1rem;
+}
+
+.textHead {
+  color: darkorange;
+  font-family: 'Courgette', cursive;
+  margin: 0.2rem;
+}
+
+.headParaf {
+  margin-top: 2.5rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+.column {
+  text-shadow: rgb(255, 0, 0);
+  border: 0.25rem solid #ffffff;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  float: left;
+  width: 34%;
+  padding: 0.75rem;
+  margin: 4rem;
+  margin-top: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+}
+
+.left {
+  display: none;
+  color: #ffffff;
+  position: absolute;
+  top: 57%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  display: none;
+  color: #ffffff;
+  position: absolute;
+  top: 57%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+}
+
+.wbutton {
+  background-color: #00ff28;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5rem;
+  box-shadow: 0px 0px 0px 0.5rem #888888;
+  border-width: 0;
+  background-image: url("Img/icon.png");
+  background-size: 7rem 7rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wbutton:active {
+  padding: 5.1rem;
+  box-shadow: 0px 0px 0px 0.25rem #888888;
+  background-size: 6.75rem 6.75rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 300px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  font-size: 40px;
+  text-align: center;
+  color: #00ff28;
+  text-shadow: #000000 0px 0px 20px;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* WORLD */
+
+.btn {
+  margin: 0.026rem;
+  position: absolute;
+  top: 0.26rem;
+  height: 0.073rem;
+  width: 0.073rem;
+  border-radius: 50%;
+  background-color: #A59E96;
+  cursor: pointer;
+  border: 1px solid rgb(30, 255, 0);
+  z-index: -1;
+}
+
+.btn-headBox {
+  position: absolute;
+  background: #d2601a;
+  color: #fff1e1;
+  padding: 0.03125rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.104rem;
+  margin: 0.015625rem;
+  min-width: 1.56rem;
+  font-family: 'Fredoka One',
+    cursive;
+}
+
+.btn-headBox:after {
+  content: '';
+  position: absolute;
+  right: 90%;
+  top: 100%;
+  border-top: 8px solid #d2601a;
+  border-right: 12px solid transparent;
+}
+
+.btn-chatBox {
+  width: 1.82rem;
+  margin: 0.156rem;
+  margin-top: 0.234rem;
+  position: absolute;
+  background: #fff1e1;
+  color: #1d3c45;
+  padding: 0.03125rem 0.052rem;
+  border-radius: 2px;
+  font-size: 0.084rem;
+  font-family: 'Itim',
+    cursive;
+}
+
+.displayN {
+  display: none;
+}
+
+
+/* W3 */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 0.52rem;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  color: black;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 0.125rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 0.167rem;
+  text-align: center;
+  padding: 0.084rem;
+  background-color: #240000;
+  color: white;
+}
+
+.modal-body {
+  padding: 0.042rem 0.084rem;
 }

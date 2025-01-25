@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="Engine.css">
-  <link rel="shortcut icon" href="Yemezlericon.png">
+  <link rel="shortcut icon" href="Carzmella.png">
   <title>CarzMella</title>
 </head>
 <body>
@@ -19,13 +19,13 @@
       <div class="vehica-menu-hover"></div>
       <!-- Brand/logo -->
       <a class="navbar-brand imglogo" href="#">
-        <img class="imagee" src="Image/CarzMella.png" alt="logo" width="200px">
+        <img class="imagee" src="Img/CarzMella.png" alt="logo" width="200px">
       </a>
 
       <!-- Links -->
       <ul class="navbar-nav sticky-top">
       <li class="nav-item dropdown try1">
-        <a class="nav-link" href="Home.html" data-toggle="dropdown">Home</a>
+        <a class="nav-link" href="Home.php" data-toggle="dropdown">Home</a>
       </li>
       <li class="nav-item dropdown try2">
         <a class="nav-link" href="#" data-toggle="dropdown">Categories<i class="fas fa-angle-down" style="padding-left:0.5rem;"></i></a>
@@ -50,16 +50,19 @@
           <a class="dropdown-item" style="border-bottom: 0px solid #e9eaee;" href="#">Service & Repairs</a>
         </div>
       </li>
-      <li class="nav-item dropdown try4 mr-5">
+      <li class="nav-item dropdown try4">
         <a class="nav-link" href="#" data-toggle="dropdown">About Us<i class="fas fa-angle-down" style="padding-left:0.5rem;"></i></a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Why CarzMella?</a>
-          <a class="dropdown-item" href="#">Our Past Experiences</a>
+          <a class="dropdown-item" href="World.php">Our branches</a>
           <a class="dropdown-item" style="border-bottom: 0px solid #e9eaee;" href="#">Communication</a>
         </div>
       </li>
+      <li class="nav-item dropdown try5">
+        <a class="nav-link" href="Would.php" data-toggle="dropdown">Would The Rather</a>
+      </li>
 
-        <li class="nav-item" style="margin-left:30rem;">
+        <li class="nav-item" style="margin-left:5rem;">
           <a class="nav-link" href="#"><i class="fas fa-user" style="margin-right:1rem;"></i> Log In</a>
         </li>
         <p style="border-left: 1px solid #50514f;;margin-top: 1.5rem;margin-bottom: 1.5rem;"></p>
@@ -94,12 +97,6 @@
     </div>
   </header>
 
-  <div class="container-fluid"><br>
-    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-  </div>
   <div class="container-fluid"><br>
     <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
     <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>

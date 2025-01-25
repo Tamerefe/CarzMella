@@ -16,18 +16,11 @@ Carzmella is a pioneering name in the luxury automobile industry. The company is
 
 - **PHP**
 - **CSS3**
-- **Tailwindcss**
 - **JavaScript**
 - **jQuery**
 
-## How to Run
-
-To explore the Carzmella website concept, simply open the `index.html` file in your web browser.
-
 ## Credits
 
-![Car](/carzmella-git.png)
-
-This website concept was created by Tamer as a design project in 2020.
+This website concept was created by Tamer as a design project in 11.20.2020.
 
 Thank you for visiting Carzmella! We hope you enjoy exploring the world of luxury automobiles with us. 🚗💨
