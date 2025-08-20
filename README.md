@@ -1,26 +1,66 @@
-# Carzmella - Luxury Car Company Website Concept
+# CarzMella – Would You Rather Game
 
-## About Carzmella
-
-Carzmella is a pioneering name in the luxury automobile industry. The company is renowned for its unique designs, high-performance vehicles, and commitment to customer satisfaction.
+This project is a simple "Would You Rather" game built with Express and EJS. The user picks one of two options shown as pairs; when all choices are completed, a results overlay appears listing the selected items and the percentage of people who chose them.
 
 ## Features
 
-- **Advanced Vehicle Catalog:** Access detailed information about Carzmella's latest models and luxury vehicles.
-- **Custom Design Options:** Offer customers the opportunity to design personalized vehicles and explore bespoke options.
-- **Luxury Car Blog:** Stay updated with the latest news, reviews, and trends in the luxury car industry through our blog.
-- **Virtual Showroom:** Explore Carzmella's showrooms and examine vehicles up close with virtual tours.
-- **Customer Experience:** Easy access to customer reviews, testimonials, and test drive reservations.
+- **Question flow**: Choose between options presented in pairs.
+- **Animation and feedback**: After a selection, a short modal displays a percentage.
+- **Results overlay**: When all pairs are finished, a results screen summarizes your choices and percentages.
+- **Play again**: Restart the game from the results screen.
 
-## Technologies Used
+## Technology
 
-- **PHP**
-- **CSS3**
-- **JavaScript**
-- **jQuery**
+- Node.js, Express.js
+- EJS (templates)
+- CSS3
+- Vanilla JavaScript
 
-## Credits
+## Setup
 
-This website concept was created by Tamer as a design project in 11.20.2020.
+Prerequisite: Node.js and npm should be installed.
 
-Thank you for visiting Carzmella! We hope you enjoy exploring the world of luxury automobiles with us. 🚗💨
+1. Install dependencies:
+
+```
+npm install
+```
+
+2. Start the app:
+
+```
+npm start
+```
+
+For development with auto-restart:
+
+```
+npm run dev
+```
+
+3. Open in the browser:
+
+```
+http://localhost:3000
+```
+
+## Project Structure
+
+- `app.js`: Express server and routes
+- `public/`: Static assets
+  - `css/style.css`: Global styles
+  - `js/main.js`: Game flow and results overlay logic
+  - `img/`: Images served to the client
+- `views/`: EJS templates
+  - `layouts/main.ejs`: Main layout
+  - `would-rather.ejs`: Game page
+
+## Development Notes
+
+- Selections are stored in `public/js/main.js` via the arrays `carName`, `carModel`, and `carValue`.
+- After the final pair, `showResults()` displays the results overlay (`#resultsOverlay`).
+- The "Play Again" button resets the app to its initial state.
+
+## License
+
+This project is licensed under the ISC License. See `LICENSE.md` for details.

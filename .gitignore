@@ -1,0 +1,103 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+
+# Dependency directories
+node_modules/
+
+# Caches
+.npm
+.eslintcache
+.cache
+
+# Editor folders
+.vscode/
+.idea/
+.history/
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*
+
+# Build output
+build/
+dist/
+.tmp/
+
+# EJS partials build caches (if any)
+*.ejs-cache
+
+# Diagnostic reports (Node.js)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+lerna-debug.log*
+
+# Testing / coverage tools
+.nyc_output
+lib-cov
+
+# Task runners
+.grunt
+
+# Compiled binary addons
+build/Release
+
+# Alternative dependency directories
+jspm_packages/
+web_modules/
+bower_components/
+
+# TypeScript
+*.tsbuildinfo
+
+# Bundler/transpiler caches
+.rpt2_cache/
+.rts2_cache_cjs
+.rts2_cache_es
+.rts2_cache_umd
+.parcel-cache/
+
+# Framework build outputs
+.next/
+out/
+.nuxt/
+.svelte-kit/
+.docusaurus/
+.serverless/
+.fusebox/
+.dynamodb/
+storybook-static/
+
+# Monorepo / build systems
+.turbo/
+.nx/cache/
+
+# Yarn / PnP
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Hosting/platform
+.vercel/
+.netlify/
+
+# REPL history
+.node_repl_history
+

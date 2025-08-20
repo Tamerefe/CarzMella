@@ -54,7 +54,7 @@ li{
 }
 
 .navimg{
-  background-image: url(/img/BackgroundCars.jpg);
+  background-image: url(../img/BackgroundCars.jpg);
   background-position: center;
   background-size: cover;
   height: 50rem;
@@ -140,6 +140,9 @@ li{
   padding: 0.75rem;
   margin: 4rem;
   margin-top: 1rem;
+  transition: transform 0.55s ease, opacity 0.55s ease, filter 0.55s ease;
+  perspective: 1000px;
+  position: relative;
 }
 
 .overlay {
@@ -151,8 +154,8 @@ li{
   display: none;
   color: #ffffff;
   position: absolute;
-  top: 57%;
-  left: 28%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -160,8 +163,8 @@ li{
   display: none;
   color: #ffffff;
   position: absolute;
-  top: 57%;
-  left: 72%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -169,19 +172,19 @@ li{
   background-color: #00ff28;
   cursor: pointer;
   border-radius: 50%;
-  padding: 5rem;
-  box-shadow: 0px 0px 0px 0.5rem #888888;
+  width: clamp(80px, 16vw, 160px);
+  height: clamp(80px, 16vw, 160px);
+  box-shadow: 0px 0px 0px 0.35rem #888888;
   border-width: 0;
-  background-image: url("/img/icon.png");
-  background-size: 7rem 7rem;
+  background-image: url("../img/icon.png");
+  background-size: 55% 55%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .wbutton:active {
-  padding: 5.1rem;
+  transform: scale(0.98);
   box-shadow: 0px 0px 0px 0.25rem #888888;
-  background-size: 6.75rem 6.75rem;
 }
 
 /* The Modal (background) */
@@ -204,25 +207,27 @@ li{
   /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  font-size: 40px;
-  text-align: center;
-  color: #00ff28;
-  text-shadow: #000000 0px 0px 20px;
   position: relative;
+  background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 50%;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-/* Add Animation */
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -247,64 +252,56 @@ li{
   }
 }
 
-/* WORLD */
-
 .btn {
-  margin: 0.026rem;
-  position: absolute;
-  top: 0.26rem;
-  height: 0.073rem;
-  width: 0.073rem;
-  border-radius: 50%;
-  background-color: #A59E96;
+  position: relative;
+  display: inline-block;
+  border-radius: 0.5rem;
   cursor: pointer;
-  border: 1px solid rgb(30, 255, 0);
-  z-index: -1;
+  border-width: 0;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .btn-headBox {
-  position: absolute;
-  background: #d2601a;
-  color: #fff1e1;
-  padding: 0.03125rem;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 0.104rem;
-  margin: 0.015625rem;
-  min-width: 1.56rem;
-  font-family: 'Fredoka One',
-    cursive;
+  position: relative;
+  font-size: 1.3rem;
+  font-family: 'Itim', cursive;
+  background-color: rgb(255, 255, 255);
+  padding: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 1rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 .btn-headBox:after {
-  content: '';
+  content: "";
   position: absolute;
-  right: 90%;
-  top: 100%;
-  border-top: 8px solid #d2601a;
-  border-right: 12px solid transparent;
+  bottom: 0;
+  left: 35%;
+  width: 30%;
+  border-bottom: 1px solid #ff0000;
+  color: red;
 }
 
 .btn-chatBox {
-  width: 1.82rem;
-  margin: 0.156rem;
-  margin-top: 0.234rem;
-  position: absolute;
-  background: #fff1e1;
-  color: #1d3c45;
-  padding: 0.03125rem 0.052rem;
-  border-radius: 2px;
-  font-size: 0.084rem;
-  font-family: 'Itim',
-    cursive;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  padding-top: 0.5;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.88rem;
+  margin: 1rem;
+  margin-top: -1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding-bottom: 2rem;
 }
 
 .displayN {
   display: none;
 }
-
-
-/* W3 */
 
 /* The Modal (background) */
 .modal {
@@ -314,7 +311,7 @@ li{
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 0.52rem;
+  padding-top: 300px;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -332,30 +329,30 @@ li{
 
 /* Modal Content */
 .modal-content {
-  color: black;
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 60%;
+  border: 1px solid #888;
+  width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  padding: 2rem;
+  border-radius: 1rem;
 }
-
-/* Add Animation */
 
 @keyframes animatetop {
   from {
     top: -300px;
-    opacity: 0;
+    opacity: 0
   }
 
   to {
     top: 0;
-    opacity: 1;
+    opacity: 1
   }
 }
 
@@ -363,7 +360,7 @@ li{
 .close {
   color: white;
   float: right;
-  font-size: 0.125rem;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -375,13 +372,80 @@ li{
 }
 
 .modal-header {
-  font-size: 0.167rem;
-  text-align: center;
-  padding: 0.084rem;
-  background-color: #240000;
+  padding: 2px 16px;
+  background-color: #5cb85c;
   color: white;
+  margin-bottom: 2rem;
 }
 
 .modal-body {
-  padding: 0.042rem 0.084rem;
+  padding: 2px 16px;
+} 
+
+/* Would-Rather selection animations */
+.flip-anim {
+  transform: rotateY(180deg);
+}
+
+@keyframes explode {
+  0% { transform: scale(1); opacity: 1; filter: none; }
+  100% { transform: scale(1.15); opacity: 0; filter: blur(4px); }
+}
+
+.explode-anim {
+  animation: explode 0.55s ease forwards;
+}
+
+/* Responsive layout for Would-Rather */
+#headOfId {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.column {
+  box-sizing: border-box;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 1200px) {
+  .column {
+    width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .column {
+    float: none;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  #oneP, #twoP {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .left, .right { top: 50%; }
+  .headParaf {
+    font-size: 1.75rem;
+  }
+  #HeadT {
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .wbutton { width: 84px; height: 84px; background-size: 50% 50%; }
+  .headParaf {
+    font-size: 1.5rem;
+  }
+  #HeadT {
+    font-size: 1rem;
+  }
 }

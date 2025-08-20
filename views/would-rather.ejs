@@ -1,0 +1,106 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka+One&family=Varela+Round&display=swap');
+
+  body {
+    background-color: #e8e8e8;
+    overflow-x: hidden;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  /* Results overlay */
+  .results-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    padding: 2rem;
+  }
+
+  .results-card {
+    background: #ffffff;
+    color: #333333;
+    width: 100%;
+    max-width: 980px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 1.5rem;
+  }
+
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .results-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 0.75rem;
+  }
+
+  .results-item img {
+    width: 96px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .results-item .meta {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+
+<div id="headOfId">
+  <h1 align="center" class="headParaf">Would You Rather Game</h1>
+  <h3 align="center" style="margin: 2rem;" id="HeadT">What İs Your Choose <span class="textHead">Mercedes G500</span> Or
+    <span class="textHead">Mercedes AMG GT R</span></h3>
+
+  <div id="oneP" class="column" style="margin-left: 5.5rem;" onmouseover="lefti()" onmouseout="lefti2()">
+    <img src="/img/Mercedes.jpg" width="100%">
+    <div class="left"><button class="wbutton" value='1' onclick='buttonV(this)'>
+
+      </button></div>
+  </div>
+  <div id="twoP" class="column" style="margin-right: 5.5rem;" onmouseover="righti()" onmouseout="righti2()">
+    <img src="/img/Mercedes2.jpg" width="100%">
+    <div class="right"><button class="wbutton" value='2' onclick='buttonV(this)'></button><br></div>
+  </div>
+
+  <div id="addMe" style="display: none;"></div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <h2>The humans %<span id="modal-percent"> </span> choose the option you choose</h2>
+  </div>
+</div>
+
+<!-- Results Screen -->
+<div id="resultsOverlay" class="results-overlay">
+  <div class="results-card">
+    <h2 align="center">Results</h2>
+    <p align="center">The options you chose and the percentage of people who chose these options:</p>
+    <div id="resultsList" class="results-grid"></div>
+    <div style="text-align: center; margin-top: 1rem;">
+      <button id="restartBtn" class="btn btn-primary" style="width: 8rem; height: 2.5rem;">Play Again</button>
+    </div>
+  </div>
+  
+</div>
